@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="popV">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eoI-2Y-hUO">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="400"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="bmm-TV-zL7"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="jsR-Tn-YKM"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ij3-PG-kTz">
+                    <rect key="frame" x="150" y="0.0" width="150" height="400"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="lri-bp-oTH"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="zxM-D9-StG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ij3-PG-kTz" firstAttribute="leading" secondItem="eoI-2Y-hUO" secondAttribute="trailing" id="Mbt-pq-ehK"/>
+                <constraint firstAttribute="bottom" secondItem="ij3-PG-kTz" secondAttribute="bottom" id="aYn-yR-M3H"/>
+                <constraint firstItem="eoI-2Y-hUO" firstAttribute="width" secondItem="ij3-PG-kTz" secondAttribute="width" id="dyE-aZ-hKu"/>
+                <constraint firstItem="eoI-2Y-hUO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fXm-Qm-Qrx"/>
+                <constraint firstAttribute="bottom" secondItem="eoI-2Y-hUO" secondAttribute="bottom" id="oX9-RI-pSE"/>
+                <constraint firstItem="ij3-PG-kTz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="q9G-C8-l7h"/>
+                <constraint firstItem="ij3-PG-kTz" firstAttribute="leading" secondItem="eoI-2Y-hUO" secondAttribute="trailing" id="yld-HG-gYz"/>
+                <constraint firstAttribute="trailing" secondItem="ij3-PG-kTz" secondAttribute="trailing" id="zf9-KC-5lm"/>
+                <constraint firstItem="eoI-2Y-hUO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zjK-RR-xx5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftTable" destination="eoI-2Y-hUO" id="5Hq-WR-yZT"/>
+                <outlet property="rightTalbe" destination="ij3-PG-kTz" id="KAE-bm-BHU"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="386"/>
+        </view>
+    </objects>
+</document>

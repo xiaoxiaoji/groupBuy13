@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="navItem">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-da-o0i">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                    <animations/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kGF-da-o0i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AeF-Rq-gGr"/>
+                <constraint firstItem="kGF-da-o0i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QSu-aB-fVk"/>
+                <constraint firstAttribute="bottom" secondItem="kGF-da-o0i" secondAttribute="bottom" id="TdH-yJ-2iy"/>
+                <constraint firstAttribute="trailing" secondItem="kGF-da-o0i" secondAttribute="trailing" id="y7E-pA-kbE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="kGF-da-o0i" id="0o1-UB-8pg"/>
+            </connections>
+        </view>
+    </objects>
+</document>
